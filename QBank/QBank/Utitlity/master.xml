@@ -1,0 +1,962 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<examinations>
+  <examination name="JEE (IIT)">
+    <subjects>
+      <subject name="Chemistry">
+        <topics>
+          <topic>Aldehydes, Ketones &amp; Carboxylic acids</topic>
+          <topic>Alkyl Halides, Alcohols &amp; Ethers</topic>
+          <topic>Amines and other Nitrogen compounds</topic>
+          <topic>Aromatic Compounds</topic>
+          <topic>Atomic Structure &amp; Nuclear Chemistry</topic>
+          <topic>Basic Concepts In Chemistry</topic>
+          <topic>Biomolecules &amp; Polymers</topic>
+          <topic>Chemical Equilibrium</topic>
+          <topic>Chemical Kinetics</topic>
+          <topic>Chemical Thermodynamics &amp; Thermochemistry</topic>
+          <topic>Coordination Compounds and Organometallics</topic>
+          <topic>d and F Block Elements</topic>
+          <topic>Enviromental Chemistry &amp; Chemistry In Everyday's Life</topic>
+          <topic>Gaseous State</topic>
+          <topic>General Organic Chemistry</topic>
+          <topic>Hydrocarbons</topic>
+          <topic>Ionic Equilibrium</topic>
+          <topic>Metallurgy</topic>
+          <topic>Moles and Equivalent Concepts</topic>
+          <topic>Others</topic>
+          <topic>p Block Elements</topic>
+          <topic>Periodic Table &amp; Chemical Bonding</topic>
+          <topic>Qualitative Analysis</topic>
+          <topic>Redox Reactions and Electrochemistry</topic>
+          <topic>s-block Elements (Alkali and Alkaline  Earth Metals)</topic>
+          <topic>Solid State &amp; surface Chemistry</topic>
+          <topic>Solutions and colligative properties</topic>
+        </topics>
+      </subject>
+      <subject name="Mathematics">
+        <topics>
+          <topic>Applications Of Derivatives</topic>
+          <topic>Binomial Theorem, Exponential and Logarithmic Series</topic>
+          <topic>Circle</topic>
+          <topic>Complex Numbers  and quadratic equations</topic>
+          <topic>Conic sections</topic>
+          <topic>Coordinate Geometry</topic>
+          <topic>Differential Equations</topic>
+          <topic>Integral calculus</topic>
+          <topic>Limits, Continuity and Differentiability</topic>
+          <topic>Mathematical Reasoning and Induction</topic>
+          <topic>Matrices and Determinants</topic>
+          <topic>Others</topic>
+          <topic>Permutation and Combination</topic>
+          <topic>Sequence &amp; series</topic>
+          <topic>Sets, Relations and functions</topic>
+          <topic>Statistics and Probability</topic>
+          <topic>Striaght Lines</topic>
+          <topic>Three Dimensional Geometry</topic>
+          <topic>Trigonometry</topic>
+          <topic>Vector Algebra</topic>
+        </topics>
+      </subject>
+      <subject name="Physics">
+        <topics>
+          <topic>Alternating Current</topic>
+          <topic>Current Electricity</topic>
+          <topic>Electromagnetic Induction</topic>
+          <topic>Electrostatics</topic>
+          <topic>Geometrical and wave optics</topic>
+          <topic>Gravitation</topic>
+          <topic>Kinematics</topic>
+          <topic>KTG, Heat &amp; Themodynamics</topic>
+          <topic>Laws of  Motion</topic>
+          <topic>Magnetic Effects of Current and Magnetism</topic>
+          <topic>Mechanical properties of matter</topic>
+          <topic>Modern physics</topic>
+          <topic>Others</topic>
+          <topic>Rotational Motion</topic>
+          <topic>Simple Harmonic Motion</topic>
+          <topic>Solids &amp; Semi Conductor</topic>
+          <topic>Sound Waves</topic>
+          <topic>Units &amp; dimensions and Vectors</topic>
+          <topic>Waves on String</topic>
+          <topic>Work, Power and Energy</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="AIPMT (Medical)">
+    <subjects>
+      <subject name="Physics">
+        <topics>
+          <topic>Physical World and Measurement</topic>
+          <topic>Kinematics</topic>
+          <topic>Laws of Motion</topic>
+          <topic>Work, Energy and Power</topic>
+          <topic>Motion of System of Particles and and Rigid Bodies</topic>
+          <topic>Gravitation</topic>
+          <topic>Properties of Bulk Matter</topic>
+          <topic>Heat and Thermodynamics</topic>
+          <topic>Behaviour of Perfect Gas and Kinetics Theory</topic>
+          <topic>Oscillation of Waves</topic>
+          <topic>Electrostatics</topic>
+          <topic>Current Electricity</topic>
+          <topic>Magnetic Effect of Current and Magnetism</topic>
+          <topic>Electromagnetic Induction and Alternating Current</topic>
+          <topic>Electromagnetic Waves</topic>
+          <topic>Geometrical Optics</topic>
+          <topic>Wave Optics</topic>
+          <topic>Dual Nature of Matter and Radiations</topic>
+          <topic>Atomic Structure and Nuclear Physics</topic>
+          <topic>Electronic Devices</topic>
+          <topic>Soilds and Semiconductors</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Chemistry">
+        <topics>
+          <topic>Alcohols, Phenols and Ethers</topic>
+          <topic>Aldehydes, Ketones &amp;carboxylic acids</topic>
+          <topic>Basic Concepts of Chemistry</topic>
+          <topic>Boimolecules</topic>
+          <topic>Chemical Bonding</topic>
+          <topic>Chemical Equilibrium</topic>
+          <topic>Chemical Kinetics</topic>
+          <topic>Chemistry in Everyday life</topic>
+          <topic>Classification of Elements and Periodicity In Properties</topic>
+          <topic>Coordination Compounds</topic>
+          <topic>d and f Block Elements</topic>
+          <topic>Electrochemistry</topic>
+          <topic>Environmental Chemistry</topic>
+          <topic>Gaseous state</topic>
+          <topic>General Organic Chemistry</topic>
+          <topic>General Principles of Isolation of Elements</topic>
+          <topic>Haloalkanes and Haloarenes</topic>
+          <topic>Hydrocarbons</topic>
+          <topic>Ionic Equilibrium</topic>
+          <topic>Organic Chemistry - Basic Principles and Techniques</topic>
+          <topic>Organic Compound Containing Nitrogen</topic>
+          <topic>Others</topic>
+          <topic>p-block Elements</topic>
+          <topic>Polymers</topic>
+          <topic>Redox Reaction</topic>
+          <topic>s-block Elements</topic>
+          <topic>Solid State</topic>
+          <topic>Solutions  and  colligative properties</topic>
+          <topic>Structure of Atom</topic>
+          <topic>Surface Chemistry</topic>
+          <topic>Thermodynamics &amp;Thermochemistry</topic>
+        </topics>
+      </subject>
+      <subject name="Biology">
+        <topics>
+          <topic>Living World</topic>
+          <topic>Diversity of Life</topic>
+          <topic>Structural Organisation In Animals and Plants</topic>
+          <topic>Cell Structure and Function/cell and Cell Division</topic>
+          <topic>Morphology of Plants</topic>
+          <topic>Morphology of Animals</topic>
+          <topic>Physiology of Plants</topic>
+          <topic>Physiology of Animals and Humans</topic>
+          <topic>Reproduction, Development and Growth In Plants</topic>
+          <topic>Reproduction, Development and Growth In Animals</topic>
+          <topic>Ecology and Environment</topic>
+          <topic>Biology and Human Welfare</topic>
+          <topic>Genetics and Evolution</topic>
+          <topic>Biotechnology and it's Application</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="Railways">
+    <subjects>
+      <subject name="General Awareness">
+        <topics>
+          <topic>Current Affairs</topic>
+          <topic>Major Financial / Economic News</topic>
+          <topic>Rail Budget and Five Year Plan</topic>
+          <topic>Who Is Who</topic>
+          <topic>Sports</topic>
+          <topic>Books and Authors</topic>
+          <topic>Awards and Honours</topic>
+          <topic>Science - Inventions and Discoveries</topic>
+          <topic>Abbreviations</topic>
+          <topic>Important Days</topic>
+          <topic>International and National Organisations</topic>
+          <topic>New Technologies and Reform In Indian Railway</topic>
+          <topic>Indian - History</topic>
+          <topic>Polity</topic>
+          <topic>Geography</topic>
+          <topic>Economy </topic>
+          <topic>Current Affairs</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Arithmetic">
+        <topics>
+          <topic>Number System</topic>
+          <topic>LCF and HCF</topic>
+          <topic>Simplifications</topic>
+          <topic>Decimal Fraction</topic>
+          <topic>Ratio and Proportion</topic>
+          <topic>Unitary Method</topic>
+          <topic>Percentage</topic>
+          <topic>Time and Distance</topic>
+          <topic>Time and Work</topic>
+          <topic>Profit Loss</topic>
+          <topic>Average</topic>
+          <topic>Simple and Compound Interest</topic>
+          <topic>Mensuration</topic>
+          <topic>Algebra</topic>
+          <topic>Data Interpretation</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Reasoning">
+        <topics>
+          <topic>Number Series</topic>
+          <topic>Alphabet Series</topic>
+          <topic>Test of Direction Sense</topic>
+          <topic>Coding Decoding</topic>
+          <topic>Number Ranking</topic>
+          <topic>Blood Relation</topic>
+          <topic>Analogy</topic>
+          <topic>Decision Making</topic>
+          <topic>Arithmetic Reasoning</topic>
+          <topic>Problem On Age Calculation</topic>
+          <topic>Statement Conclusion</topic>
+          <topic>Non-verbal Series</topic>
+          <topic>Mirror Images (non-verbal)</topic>
+          <topic>Cubes and Dice (non-verbal)</topic>
+          <topic>Grouping Identical Figures (non-verbal)</topic>
+          <topic>Embedded Figures (non-verbal)</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="General Intelligence">
+        <topics>
+          <topic>Syllogism</topic>
+          <topic>Input-output</topic>
+          <topic>Word Building, </topic>
+          <topic>Seating Arrangement</topic>
+          <topic>Clock and Calender</topic>
+          <topic>Similarities and Differences</topic>
+          <topic>Space Visualization / Orientation</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Technical Ability">
+        <topics>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="UPSC-Prelims (GS)">
+    <subjects>
+      <subject name="Current Events (national)">
+        <topics>
+          <topic>India Year Book</topic>
+          <topic>Economic Survey</topic>
+          <topic>Persons In News</topic>
+          <topic>Books and Authors</topic>
+          <topic>Achievements of Indians In Different Sports</topic>
+          <topic>Highest, Tallest and Biggest</topic>
+          <topic>Defence (missiles and Indegenious Technology)</topic>
+          <topic>Regions In News and Countries</topic>
+          <topic>Others</topic>
+          <topic>Bilateral, Regional and Global Groupings and Agreements</topic>
+          <topic>India and Its Neighbours</topic>
+          <topic>United Nations Organization (uno)</topic>
+          <topic>Indian Diaspora</topic>
+          <topic>Effect of Policies and Politics</topic>
+          <topic>Major World Conferences and Outcomes</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="History of India">
+        <topics>
+          <topic>Indian History – Ancient</topic>
+          <topic>Indian History – Medieval</topic>
+          <topic>Indian History – Modern</topic>
+          <topic>Modern (Pre 1857)</topic>
+          <topic>Modern (Post 1857)</topic>
+          <topic>Freedom Struggle</topic>
+          <topic>Indian National Movement</topic>
+          <topic>Administrative Reforms</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Geography of The World">
+        <topics>
+          <topic>Indian Geography</topic>
+          <topic>World Geography- All Continents</topic>
+          <topic>Physical Geography</topic>
+          <topic>Human Geography</topic>
+          <topic>Economic Geography</topic>
+          <topic>Agriculture and Allied Activities</topic>
+          <topic>Atmosphere and Its Components</topic>
+          <topic>World Climatic Types</topic>
+          <topic>Urbanization and Settlements</topic>
+          <topic>Wild Life</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Indian Polity, Governance, Constitution">
+        <topics>
+          <topic>Basic Structure of Constitution and Its Working</topic>
+          <topic>Amendments and Schedules</topic>
+          <topic>Basic Knowledge of Articles</topic>
+          <topic>Judgements of Supreme Court and High Courts</topic>
+          <topic>Parliamentary Processes</topic>
+          <topic>Programme and Ministry (MTF)</topic>
+          <topic>Parlimentary Committees</topic>
+          <topic>Planning</topic>
+          <topic>Cabinets</topic>
+          <topic>Political Dynamics</topic>
+          <topic>System of Government (Parliamentary and Federal)</topic>
+          <topic>State and Central Government</topic>
+          <topic>Union Territories and Special Areas</topic>
+          <topic>Local Government</topic>
+          <topic>Constitutional and Non Constitutional Bodies</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Economic and Social Development">
+        <topics>
+          <topic>Banking</topic>
+          <topic>Planning, Growth, Development, Resource Mobilization and Employment</topic>
+          <topic>Budgeting and Taxation</topic>
+          <topic>WTO Issues</topic>
+          <topic>Economic Fundamentals and Concepts</topic>
+          <topic>Foreign Trade</topic>
+          <topic>Goverment Schemes</topic>
+          <topic>Monetary and Fiscal Policy</topic>
+          <topic>Economic Groups and Trade Agreements</topic>
+          <topic>Micro and Macro Economic Basics</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="General Issues">
+        <topics>
+          <topic>Conservation, Pollution, Degradation and Impact Assessment</topic>
+          <topic>Disaster and Disaster Management</topic>
+          <topic>Different Summits and Protocols Relating To Environment</topic>
+          <topic>Climate Change and Effects</topic>
+          <topic>Endangered Species</topic>
+          <topic>Different Environmental Bodies /boards</topic>
+          <topic>Technological Terms (Carbon Cycle, Water Step)</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="General Science">
+        <topics>
+          <topic>General Biology</topic>
+          <topic>General Chemistry</topic>
+          <topic>General Physics</topic>
+          <topic>General Technology</topic>
+          <topic>General Environment</topic>
+          <topic>Diseases and Eradication</topic>
+          <topic>Inventions and Discoveries of Nobel Prize Winners</topic>
+          <topic>Latest Discoveries and Technologies</topic>
+          <topic>Developments and Their Effects In Everyday Life</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Art and Culture">
+        <topics>
+          <topic>Various Dance Forms of India</topic>
+          <topic>Indian Painting Style</topic>
+          <topic>Architecture (Rock Cut and Cave)</topic>
+          <topic>Indian Schools of Philosophy and Literature</topic>
+          <topic>Indian Theatre Forms</topic>
+          <topic>Music Gharanas of India</topic>
+          <topic>Religions of India and Their Philosophy</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="UPSC-Prelims (CSAT)">
+    <subjects>
+      <subject name="Comprehension">
+        <topics>
+          <topic>Deriving Conclusions</topic>
+          <topic>Passage Completion</topic>
+          <topic>Theme Detection</topic>
+          <topic>Passage Correction</topic>
+          <topic>Sentence Correction and Arrangement</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Interpersonal Skills">
+        <topics>
+          <topic>Fill In The Blanks</topic>
+          <topic>Analogy</topic>
+          <topic>Synonyms</topic>
+          <topic>Antonyms</topic>
+          <topic>Jumbled Paragraphs</topic>
+          <topic>Single Word</topic>
+          <topic>Substitutions</topic>
+          <topic>Meaning Equivalence of Sentences</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Logical Reasoning and Analytical Ability">
+        <topics>
+          <topic>Syllogism</topic>
+          <topic>Tabulation</topic>
+          <topic>Blood Relation</topic>
+          <topic>Sitting Arrangement</topic>
+          <topic>Series Completion</topic>
+          <topic>Coding and Decoding</topic>
+          <topic>Puzzle Test</topic>
+          <topic>Logical Sequence</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Decision-making and Problemsolving">
+        <topics>
+          <topic>Situational/conditional Questions</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="General Mental Ability">
+        <topics>
+          <topic>Coding</topic>
+          <topic>Ages</topic>
+          <topic>Relations</topic>
+          <topic>Venn Diagrams</topic>
+          <topic>Sets</topic>
+          <topic>Dices</topic>
+          <topic>Directional Sense</topic>
+          <topic>Abstract Figure</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Basic Numeracal Ability">
+        <topics>
+          <topic>Number System</topic>
+          <topic>Average</topic>
+          <topic>Permutation and Combination</topic>
+          <topic>Percentage</topic>
+          <topic>Ratio and Proportion</topic>
+          <topic>Profit and Loss</topic>
+          <topic>Time and Work</topic>
+          <topic>Time and Distance</topic>
+          <topic>Interest</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="SSC">
+    <subjects>
+      <subject name="General Intelligence and Reasoning">
+        <topics>
+          <topic>Semantic Analogy</topic>
+          <topic>Semantic Classification</topic>
+          <topic>Semantic Series</topic>
+          <topic>Problem Solving</topic>
+          <topic>Word Building</topic>
+          <topic>Coding and De-coding</topic>
+          <topic>Numerical Operations</topic>
+          <topic>Symbolic Operations</topic>
+          <topic>Figural Pattern</topic>
+          <topic>Trends</topic>
+          <topic>Venn Diagrams</topic>
+          <topic>Drawing Inferences</topic>
+          <topic>Embedded Figures</topic>
+          <topic>Relationship Concepts</topic>
+          <topic>Statement Conclusion</topic>
+          <topic>Syllogistic Reasoning</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="General Awareness">
+        <topics>
+          <topic>Current Events</topic>
+          <topic>History</topic>
+          <topic>Culture</topic>
+          <topic>Geography</topic>
+          <topic>Economic Scene</topic>
+          <topic>General Policy</topic>
+          <topic>Scientific Research</topic>
+          <topic>India and Neighbouring Country</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="English Comprehension">
+        <topics>
+          <topic>Vocabulary</topic>
+          <topic>Synonyms and Antonyms</topic>
+          <topic>Word Formation</topic>
+          <topic>Sentence Completion</topic>
+          <topic>Theme Detection</topic>
+          <topic>Deriving Conclusions</topic>
+          <topic>Passage Completion</topic>
+          <topic>Error Detection</topic>
+          <topic>Passage Correction</topic>
+          <topic>Sentence Correction</topic>
+          <topic>Grammar and Spelling</topic>
+          <topic>Idioms and Phrases</topic>
+          <topic>Fill In The Blanks</topic>
+          <topic>One Word Subsitution</topic>
+          <topic>Active/Passive Voice of Verbs</topic>
+          <topic>Conversion Into Direct/indirect Narration</topic>
+          <topic>Shuffling of Sentence Parts</topic>
+          <topic>Shuffling of Sentences In A Passage</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Quantitative Aptitude">
+        <topics>
+          <topic>Number System</topic>
+          <topic>Divisibility</topic>
+          <topic>Lcm and Hcf</topic>
+          <topic>Percentage</topic>
+          <topic>Average</topic>
+          <topic>Ratio and Proportion</topic>
+          <topic>Allegation Or Mixture</topic>
+          <topic>Partnership</topic>
+          <topic>Profit and Loss</topic>
+          <topic>Simple Interest</topic>
+          <topic>Compound Interest</topic>
+          <topic>Time and Work</topic>
+          <topic>Pipes and Cistern</topic>
+          <topic>Work and Wages</topic>
+          <topic>Time and Distance</topic>
+          <topic>Trains</topic>
+          <topic>Boats and Stream</topic>
+          <topic>Races and Games</topic>
+          <topic>Problem Based On Ages</topic>
+          <topic>Clock</topic>
+          <topic>Calendar</topic>
+          <topic>Mensuration</topic>
+          <topic>Sequence and Series</topic>
+          <topic>Permutation and Combination</topic>
+          <topic>Probability</topic>
+          <topic>Data Interpretation</topic>
+          <topic>Algebra</topic>
+          <topic>Logarithms</topic>
+          <topic>Geometry</topic>
+          <topic>Triangle</topic>
+          <topic>Circle</topic>
+          <topic>Trigonometry</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="CAT (MBA)">
+    <subjects>
+      <subject name="English/verbal Ability">
+        <topics>
+          <topic>Reading Comprehension</topic>
+          <topic>Verbal Reasoning</topic>
+          <topic>Syllogisms</topic>
+          <topic>Analogies</topic>
+          <topic>Antonyms</topic>
+          <topic>Synonyms</topic>
+          <topic>Fill In The Blanks</topic>
+          <topic>Sentence Correction</topic>
+          <topic>Idioms</topic>
+          <topic>Meaning-usage Match</topic>
+          <topic>Jumbled Paragraph</topic>
+          <topic>Facts, Inferences, Judgement</topic>
+          <topic>English Usage or Grammar</topic>
+          <topic>Critical Reasoning</topic>
+          <topic>Contextual Vocabulary (homonyms)</topic>
+          <topic>Sentence/Paragraph Completion</topic>
+          <topic>Close Passage</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Data Interpretation">
+        <topics>
+          <topic>Introduction To Data Interpretation</topic>
+          <topic>Tabular Data</topic>
+          <topic>Line Graph</topic>
+          <topic>Bar Chart or Graph</topic>
+          <topic>Pie Chart or Graph</topic>
+          <topic>Column Graphs</topic>
+          <topic>Venn Diagrams</topic>
+          <topic>Caselets</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Mathematics/Quantitative Ability">
+        <topics>
+          <topic>Number Systems</topic>
+          <topic>LCM and HCF</topic>
+          <topic>Percentages</topic>
+          <topic>Profit, Loss and Discount</topic>
+          <topic>Interest (Simple and Compound)</topic>
+          <topic>Speed, Time and Distance</topic>
+          <topic>Time and Work</topic>
+          <topic>Averages</topic>
+          <topic>Ratio , Proportion and Variation</topic>
+          <topic>Linear and Quadratic Equations</topic>
+          <topic>Complex Numbers</topic>
+          <topic>Logarithms</topic>
+          <topic>Progressions (Sequences and Series)</topic>
+          <topic>Binomial Theorem</topic>
+          <topic>Surds and Indices</topic>
+          <topic>Inequalities</topic>
+          <topic>Permutation and Combination</topic>
+          <topic>Probability</topic>
+          <topic>Functions</topic>
+          <topic>Set Theory</topic>
+          <topic>Mixtures and Alligations</topic>
+          <topic>Geometry</topic>
+          <topic>Co-ordinate Geometry</topic>
+          <topic>Trigonometry</topic>
+          <topic>Mensuration</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Logical Reasoning">
+        <topics>
+          <topic>Introduction To Logic</topic>
+          <topic>Syllogism</topic>
+          <topic>Logical Connectives</topic>
+          <topic>Binary Logic</topic>
+          <topic>Seating Arrangments</topic>
+          <topic>Logical Sequence and and Matching</topic>
+          <topic>Venn Diagram</topic>
+          <topic>Blood Relations</topic>
+          <topic>Cubes</topic>
+          <topic>Clocks</topic>
+          <topic>Calendars</topic>
+          <topic>Number and Letter Series</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="GATE (Mechanical Engg)">
+    <subjects>
+      <subject name="Engineering Mathematics">
+        <topics>
+          <topic>Linear Algebra</topic>
+          <topic>Differential equations</topic>
+          <topic>Complex variables</topic>
+          <topic>Probability and Statistics</topic>
+          <topic>Numerical Methods</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Applied Mechanics And Design">
+        <topics>
+          <topic>Engineering Mechanics</topic>
+          <topic>Strength of Materials</topic>
+          <topic>Theory of Machines</topic>
+          <topic>Vibrations</topic>
+          <topic>Machine Design</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Fluid Mechanics And Thermal Sciences">
+        <topics>
+          <topic>Fluid Mechanics</topic>
+          <topic>Bernoulis Equation</topic>
+          <topic>Flow through Pipes</topic>
+          <topic>Heat-Transfer</topic>
+          <topic>Thermodynamics</topic>
+          <topic>Behaviour of Ideal and Real gases</topic>
+          <topic>Power Engineering</topic>
+          <topic>IC Engines</topic>
+          <topic>Refrigeration and Air Conditioning</topic>
+          <topic>Turbomachinery</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Manufacturing And Industrial Engineering">
+        <topics>
+          <topic>Engineering Materials</topic>
+          <topic>Metal Casting</topic>
+          <topic>Riser and gating design and considerations</topic>
+          <topic>Forming</topic>
+          <topic>Joining</topic>
+          <topic>Machining and Machine Tool Operations</topic>
+          <topic>Metrology and Inspection</topic>
+          <topic>Computer Integrated Manufacturing</topic>
+          <topic>Production Planning and Control</topic>
+          <topic>Inventory Control</topic>
+          <topic>Operations Research</topic>
+          <topic>PERT and CPM</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="General Aptitude">
+        <topics>
+          <topic>English Grammar</topic>
+          <topic>Sentence Completion</topic>
+          <topic>Verbal Analogies</topic>
+          <topic>Word Groups</topic>
+          <topic>Instructions</topic>
+          <topic>Critical Reasoning</topic>
+          <topic>Verbal Deduction</topic>
+          <topic>Numerical Computation</topic>
+          <topic>Numerical Estimation</topic>
+          <topic>Numerical Reasoning</topic>
+          <topic>Data Interpretation</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="IBPS (Banking)">
+    <subjects>
+      <subject name="General Awareness">
+        <topics>
+          <topic>Indian Economy</topic>
+          <topic>International Economy</topic>
+          <topic>UNO</topic>
+          <topic>Marketing</topic>
+          <topic>Awards and Honors Sports</topic>
+          <topic>Finance and shares</topic>
+          <topic>Agriculture</topic>
+          <topic>Fiscal and Monetary Policies</topic>
+          <topic>Current affairs</topic>
+          <topic>Countries and currencies</topic>
+          <topic>Books and Their Authors</topic>
+          <topic>Banking Terms</topic>
+          <topic>RBI</topic>
+          <topic>Abbreviations</topic>
+          <topic>International financial institutions</topic>
+          <topic>Various Government Schemes</topic>
+          <topic>Banking affairs</topic>
+          <topic>Appointments and Personalities</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="English Language">
+        <topics>
+          <topic>Vocabulary</topic>
+          <topic>Synonyms and Antonyms</topic>
+          <topic>Word formation</topic>
+          <topic>Sentence completion</topic>
+          <topic>Theme detection</topic>
+          <topic>Comprehension</topic>
+          <topic>Cloze Passages/Tests</topic>
+          <topic>Error detection</topic>
+          <topic>Passage correction (Comprehension)</topic>
+          <topic>Sentence correction (Comprehension)</topic>
+          <topic>Grammar and Spelling</topic>
+          <topic>Idioms and Phrases</topic>
+          <topic>Spotting Errors</topic>
+          <topic>Ordering of jumbled up sentences</topic>
+          <topic>Fill in the blanks</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Reasoning">
+        <topics>
+          <topic>Number series</topic>
+          <topic>Letter and symbol series</topic>
+          <topic>Statement and argument</topic>
+          <topic>Logical problems</topic>
+          <topic>Verbal reasoning</topic>
+          <topic>Blood relations</topic>
+          <topic>Coding-decoding</topic>
+          <topic>Number ranking</topic>
+          <topic>Making judgments</topic>
+          <topic>Syllogism</topic>
+          <topic>Drawing inference</topic>
+          <topic>Data sufficiency</topic>
+          <topic>Puzzles</topic>
+          <topic>Direction sense test</topic>
+          <topic>Statement and conclusion</topic>
+          <topic>Inequality</topic>
+          <topic>Visual reasoning</topic>
+          <topic>Input ouput</topic>
+          <topic>Passage and conclusions</topic>
+          <topic>Decision Making</topic>
+          <topic>Causes and effects</topic>
+          <topic>Assertion and reasoning</topic>
+          <topic>Word formation</topic>
+          <topic>Sitting arrangement</topic>
+          <topic>Statement and assumptions</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Computer Knowledge">
+        <topics>
+          <topic>Basic computer knowledge and terminology</topic>
+          <topic>Software and Hardware (Database and communication)</topic>
+          <topic>Computer abbreviation</topic>
+          <topic>Microsoft-office</topic>
+          <topic>Basic knowledge of Internet and networking</topic>
+          <topic>History of computers</topic>
+          <topic>Operating systems</topic>
+          <topic>Number systems</topic>
+          <topic>Computer tools</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Numerical Ability">
+        <topics>
+          <topic>Numbers, Approximation and Wrong Number</topic>
+          <topic>Decimal and fractions</topic>
+          <topic>Square root and cube root,</topic>
+          <topic>Simplifications</topic>
+          <topic>Partnerships</topic>
+          <topic>Percentage, Ratio and Proportions</topic>
+          <topic>Average and Ages</topic>
+          <topic>Profit and loss</topic>
+          <topic>Simple interest and compound interest</topic>
+          <topic>Time and work</topic>
+          <topic>Time and distance</topic>
+          <topic>Mensuration</topic>
+          <topic>Permutation and combination</topic>
+          <topic>Data interpretation (Charts and Graphs)</topic>
+          <topic>Probability</topic>
+          <topic>Number system and Number series</topic>
+          <topic>HCF and LCM</topic>
+          <topic>Case study</topic>
+          <topic>Average and  percentage</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="IES (General Ability)">
+    <subjects>
+      <subject name="General English">
+        <topics>
+          <topic>Sentence Improvement</topic>
+          <topic>Synonyms/Antonyms</topic>
+          <topic>Ordering of Sentences</topic>
+          <topic>Ordering parts of a sentence</topic>
+          <topic>Spotting Errors</topic>
+          <topic>Comprehension</topic>
+          <topic>Fill in the blanks</topic>
+          <topic>Selecting Words</topic>
+          <topic>Relationships</topic>
+          <topic>Idioms</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="General Studies">
+        <topics>
+          <topic>General Knowledge </topic>
+          <topic>Indian Geography</topic>
+          <topic>World Geography</topic>
+          <topic>History of Ancient India</topic>
+          <topic>History of Medieval India</topic>
+          <topic>History of Modern India</topic>
+          <topic>Indian Polity</topic>
+          <topic>Life Science</topic>
+          <topic>Indian Economy </topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="IES-Mech (Paper 1)">
+    <subjects>
+      <subject name="Thermodynamics">
+        <topics>
+          <topic>Cycles and IC Engines</topic>
+          <topic>Laws of Thermodynamics</topic>
+          <topic>Entropy</topic>
+          <topic>Properties of Gases</topic>
+          <topic>Refrigeration cycles</topic>
+          <topic>C-I and S.I. Engines</topic>
+          <topic>Turbo-prop and Rocket engines</topic>
+          <topic>Flue gas analysis</topic>
+          <topic>Measurement of Calorific values</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Heat Transfer and Refrigeration and Air-conditioning">
+        <topics>
+          <topic>Modes of heat transfer</topic>
+          <topic>Fundamentals of diffusive and connective mass transfer</topic>
+          <topic>Black body and Radiation</topic>
+          <topic>Heat pump and Refrigeration cycles and systems</topic>
+          <topic>Psychometry</topic>
+          <topic>Sensible heating and cooling</topic>
+          <topic>Load calculations</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Fluid Mechanics and Machinery and Steam Generators">
+        <topics>
+          <topic>Properties and classification of fluids</topic>
+          <topic>Kinematics and Dynamics</topic>
+          <topic>Center of pressure and Buoyancy</topic>
+          <topic>Irrotational and incompressible.Inviscid flow</topic>
+          <topic>Bernoulli’s equation</topic>
+          <topic>Laminar and tubulent flows</topic>
+          <topic>Operation and control of  Pumps and Turbines</topic>
+          <topic>Power transmission</topic>
+          <topic>Steam generators</topic>
+          <topic>Various types of steam and gas Turbines</topic>
+          <topic>Centrifugal and axial flow Compressors</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+  <examination name="IES-Mech (Paper 2)">
+    <subjects>
+      <subject name="Theory of Machines and Machine Design">
+        <topics>
+          <topic>Kinematic and dynamic analysis of planer mechanisms</topic>
+          <topic>Cams.Gears and gear trains</topic>
+          <topic>Flywheels and Governors</topic>
+          <topic>Balancing of single and multicylinder engines</topic>
+          <topic>Design of Joints:cotters, keys, splines etc</topic>
+          <topic> Design of friction drives: couplings and clutches</topic>
+          <topic>Design of Power transmission systems: gears and gear drives</topic>
+          <topic>Design of bearings</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Strength of Materials and Engineering Materials">
+        <topics>
+          <topic>Stress and strain</topic>
+          <topic>Beams- Bending moment and shear force diagram</topic>
+          <topic>Torsion of shafts and  helical springs</topic>
+          <topic>Thick-and thin-walled pressure vessels</topic>
+          <topic>Strain energy concepts and theories of failure</topic>
+          <topic>Basic concepts on structure of solids</topic>
+          <topic>Detects in crystalline materials</topic>
+          <topic>Alloys and binary phase diagrams.</topic>
+          <topic>Heat treatment</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Production  Engineering">
+        <topics>
+          <topic>Metal Forming</topic>
+          <topic>Metal Casting</topic>
+          <topic>Fabrication Processes</topic>
+          <topic>Metal Cutting</topic>
+          <topic>Cutting Tools</topic>
+          <topic>Tool Life and Machinability</topic>
+          <topic>Machining Processes</topic>
+          <topic>Fits and tolerances</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+      <subject name="Industrial Engineering and Computation">
+        <topics>
+          <topic>Production Planning and Control</topic>
+          <topic>Forecasting</topic>
+          <topic>PERT and CPM</topic>
+          <topic>Scheduling</topic>
+          <topic>Product development</topic>
+          <topic>Control Operations</topic>
+          <topic>Job design</topic>
+          <topic>Quality Management</topic>
+          <topic>Operations Research</topic>
+          <topic>Value Engineering</topic>
+          <topic>Computer Organisation</topic>
+          <topic>Features of Common computer Languages</topic>
+          <topic>Elementary Programming</topic>
+          <topic>Others</topic>
+        </topics>
+      </subject>
+    </subjects>
+  </examination>
+</examinations>
