@@ -128,16 +128,6 @@
     <Resource Include="images\addnew.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Desktop\Qrator\Qrator.Common\Qrator.Common.csproj">
-      <Project>{dc4ee03f-70e4-45bb-bf51-0e50030c8645}</Project>
-      <Name>Qrator.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Desktop\Qrator\Qrator.ServerData\Qrator.ServerData.csproj">
-      <Project>{ee0dab2a-5379-4757-9f8f-9e3a36b9317a}</Project>
-      <Name>Qrator.ServerData</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Utitlity\master.xml">
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -148,6 +138,25 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="images\saveItem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="master.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\Edit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Support Packages\Qrator.Common\Qrator.Common.csproj">
+      <Project>{dc4ee03f-70e4-45bb-bf51-0e50030c8645}</Project>
+      <Name>Qrator.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Support Packages\Qrator.ServerData\Qrator.ServerData.csproj">
+      <Project>{ee0dab2a-5379-4757-9f8f-9e3a36b9317a}</Project>
+      <Name>Qrator.ServerData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

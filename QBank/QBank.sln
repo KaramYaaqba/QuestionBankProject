@@ -5,9 +5,9 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QBank", "QBank\QBank.csproj", "{554AEF2B-F443-4CC8-BC1E-5448882C2C06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qrator.Common", "..\..\..\..\Desktop\Qrator\Qrator.Common\Qrator.Common.csproj", "{DC4EE03F-70E4-45BB-BF51-0E50030C8645}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qrator.Common", "Support Packages\Qrator.Common\Qrator.Common.csproj", "{DC4EE03F-70E4-45BB-BF51-0E50030C8645}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qrator.ServerData", "..\..\..\..\Desktop\Qrator\Qrator.ServerData\Qrator.ServerData.csproj", "{EE0DAB2A-5379-4757-9F8F-9E3A36B9317A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Qrator.ServerData", "Support Packages\Qrator.ServerData\Qrator.ServerData.csproj", "{EE0DAB2A-5379-4757-9F8F-9E3A36B9317A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

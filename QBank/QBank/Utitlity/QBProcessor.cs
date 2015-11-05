@@ -8,9 +8,9 @@ using System.Net;
 using System.IO;
 using Qrator.Common;
 using System.Reflection;
+using System.Windows.Forms;
 
-namespace Qrator.Utility
-{
+
     public static class QBProcessor
     {
         public static void SetDefaultTopic(QuestionBank qb)
@@ -113,7 +113,7 @@ namespace Qrator.Utility
             //    }
             //}
 
-            return "redo";
+            return data;
         }
 
         //todo : redo
@@ -136,4 +136,4 @@ namespace Qrator.Utility
             //}
         }
     }
-}
+

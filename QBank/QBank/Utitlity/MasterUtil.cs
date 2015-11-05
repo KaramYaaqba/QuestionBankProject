@@ -5,14 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Xml;
 
-namespace Qrator.Utility
-{
     public static class MasterUtil
     {
  
         private static string[] ExecuteXPath(string xPath, bool isTopic)
         {
-            Stream s = typeof(MasterUtil).Assembly.GetManifestResourceStream("Qrator.Utility.master.xml");
+            Stream s = new FileStream("E:\\master.xml", FileMode.Open, FileAccess.Read);
             XmlDocument mappingFile = new XmlDocument();
             mappingFile.Load(s);
             XmlNodeList exams = mappingFile.SelectNodes(xPath);
@@ -83,4 +81,4 @@ namespace Qrator.Utility
             return nodes.Count;
         }
     }
-}
+

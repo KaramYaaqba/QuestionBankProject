@@ -26,6 +26,8 @@ namespace QBank
         public childQuestionBank()
         {
             InitializeComponent();
+            foreach (string s in MasterUtil.GetExaminations())
+            { comboGrade.Items.Add(s); }
             IsNew = true;
         }
 

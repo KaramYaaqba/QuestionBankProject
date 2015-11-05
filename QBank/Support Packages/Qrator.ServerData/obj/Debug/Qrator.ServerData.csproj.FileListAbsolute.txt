@@ -1,0 +1,34 @@
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\Qrator.ServerData.dll.config
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\Qrator.ServerData.dll
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\Qrator.ServerData.pdb
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.dll
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.SqlServer.dll
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\Qrator.Common.dll
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\Qrator.Common.pdb
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.xml
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.SqlServer.xml
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\obj\Debug\Qrator.ServerData.csprojResolveAssemblyReference.cache
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\obj\Debug\Qrator.ServerData.dll
+C:\EY\Projects\Sandbox\Qrator\Qrator.ServerData\obj\Debug\Qrator.ServerData.pdb
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\Qrator.ServerData.dll.config
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\Qrator.ServerData.dll
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\Qrator.ServerData.pdb
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.dll
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\Qrator.Common.dll
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\Qrator.Common.pdb
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.xml
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\obj\Debug\Qrator.ServerData.csprojResolveAssemblyReference.cache
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\obj\Debug\Qrator.ServerData.dll
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.ServerData\obj\Debug\Qrator.ServerData.pdb
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\bin\Debug\Qrator.ServerData.dll.config
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\bin\Debug\Qrator.ServerData.dll
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\bin\Debug\Qrator.ServerData.pdb
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\bin\Debug\Qrator.Common.dll
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\bin\Debug\Qrator.Common.pdb
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\bin\Debug\EntityFramework.xml
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\obj\Debug\Qrator.ServerData.csprojResolveAssemblyReference.cache
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\obj\Debug\Qrator.ServerData.dll
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.ServerData\obj\Debug\Qrator.ServerData.pdb

@@ -93,10 +93,25 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        <DataTemplate x:Key="DataTemplate1">
+            <Grid Height="Auto" Width="Auto" MinHeight="65" Margin="8,8,8,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="33"/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Stretch" Height="Auto" Margin="0,0,0,8" Stroke="Black" VerticalAlignment="Stretch" Width="Auto" Grid.ColumnSpan="2"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding QuestionText, Mode=TwoWay}" VerticalAlignment="Top" Margin="10,10,0,0" Height="16"/>
+                <Image x:Name="btnEdit" Grid.Column="1" HorizontalAlignment="Stretch" Height="26" VerticalAlignment="Top" Width="Auto" Source="images/Edit.jpg" MouseLeftButtonUp="btnEdit_MouseLeftButtonUp"/>
+                <Image x:Name="btnDelete" Grid.Column="1" HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="33" Margin="0,31,0,0" Source="images/delete.png" MouseLeftButtonUp="btnDelete_MouseLeftButtonUp"/>
+            </Grid>
+        </DataTemplate>
+        <ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+            <StackPanel IsItemsHost="True"/>
+        </ItemsPanelTemplate>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="122" MinHeight="50"/>
+            <RowDefinition Height="156" MinHeight="50"/>
             <RowDefinition/>
             <RowDefinition Height="46" MinHeight="30"/>
         </Grid.RowDefinitions>
@@ -105,16 +120,18 @@
                 <Ribbon.ApplicationMenu>
                     <RibbonApplicationMenu KeyTip="F">
                         <RibbonApplicationMenuItem Header="New Question Bank" Click="openNewQuestionBank" />
+                        <RibbonApplicationMenuItem Header="Open Question Bank" Click="openExistQuestionBank" />
+                        <RibbonApplicationMenuItem Header="Validate Question Bank" Click="openValidateQuestionBank" />
                         <RibbonApplicationMenuItem Header="Exit"  />
                     </RibbonApplicationMenu>
                 </Ribbon.ApplicationMenu>
 
-                <RibbonTab Header="Questions" KeyTip="H" Margin="0,0,0,13" >
+                <RibbonTab Header="Questions" KeyTip="H" VerticalAlignment="Top" Margin="0" >
                     <!-- Home  group-->
                     <RibbonGroup x:Name="ClipboardGroup" Header="Questions" Margin="0,1" Width="484">
-                        <RibbonButton  Label="Add Question" KeyTip="X" LargeImageSource="images/addnew.png" Height="65" Width="80" />
-                        <RibbonButton  Label="Save Question" KeyTip="C" LargeImageSource="images/saveItem.png" Width="80" Height="65" />
-                        <RibbonButton  Label="Delete Question" KeyTip="FP" LargeImageSource="images/delete.png" Width="80" Height="65" />
+                        <RibbonButton Label="Save and New Question"  KeyTip="X" Height="80" Click="RibbonButton_Click" Content="New Question" Margin="0,0,-7,0" />
+                        <RibbonButton  KeyTip="C" Height="83" Margin="9,0,-24,0" Label="New Question" Click="NewQuestion_Click" />
+                        <RibbonButton   KeyTip="FP" Width="80" Height="68" Click="delete_Click" Margin="36,0,-36,0" Label="Delete Queston" />
                     </RibbonGroup>
                 </RibbonTab>
 
@@ -127,8 +144,8 @@
             </Grid.ColumnDefinitions>
             <Grid x:Name="question_grid" Margin="0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="238*"/>
-                    <ColumnDefinition Width="815*"/>
+                    <ColumnDefinition Width="Auto" MinWidth="300"/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid x:Name="question_summary_grid" Margin="0">
                     <Grid.RowDefinitions>
@@ -144,7 +161,7 @@
                         </Rectangle.Fill>
                     </Rectangle>
                     <Label Content="Questions" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,11,0,0" FontSize="18" FontFamily="Arial" Height="31" Width="91"/>
-                    <ItemsControl Margin="8,0" Grid.Row="1">
+                    <ItemsControl x:Name="itmsQuestions" Margin="8,0" Grid.Row="1" ItemTemplate="{DynamicResource DataTemplate1}" ItemsPanel="{DynamicResource ItemsPanelTemplate1}">
                         <ItemsControl.Background>
                             <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" SpreadMethod="Reflect" Opacity="0.5">
                                 <GradientStop Color="#FFF6FAFC"/>
@@ -153,19 +170,18 @@
                         </ItemsControl.Background>
                     </ItemsControl>
                 </Grid>
-                <Grid x:Name="question_detail_grid" Grid.Column="1" Margin="0" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Visible">
+                <Grid x:Name="Content" Grid.Column="1" Margin="0">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto" MinHeight="51"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
                         <RowDefinition/>
                     </Grid.RowDefinitions>
-                    <Grid x:Name="general_details" Margin="0">
+                    <Grid x:Name="general_head" Margin="0,0,0,1">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" MinHeight="50"/>
-                            <RowDefinition Height="Auto" MinHeight="1"/>
+                            <RowDefinition Height="53"/>
                         </Grid.RowDefinitions>
-                        <Rectangle Margin="0,6,0,4" Stroke="Black" OpacityMask="#FFD42525">
+                        <Rectangle Margin="0,6" Stroke="Black" OpacityMask="#FFD42525">
                             <Rectangle.Fill>
                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                     <GradientStop Color="#FFFBFDFE" Offset="0"/>
@@ -173,16 +189,39 @@
                                 </LinearGradientBrush>
                             </Rectangle.Fill>
                         </Rectangle>
-                        <Label Content="General Details" HorizontalAlignment="Left" Margin="24,8,0,8" VerticalAlignment="Center" FontSize="18" Height="34" Width="130"/>
-                        <CheckBox x:Name="collapse" Content="" HorizontalAlignment="Left" Margin="8,18,0,0" VerticalAlignment="Top" Height="15" Width="20" IsChecked="True" Style="{DynamicResource CheckBoxStyle1}"/>
-                        <Grid x:Name="content" Margin="0,1,0,0" Grid.Row="1" Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=collapse}" Background="#FFD11B1B" MinWidth="100">
+                        <Label Content="General Details" HorizontalAlignment="Left" Margin="24,8,0,11" VerticalAlignment="Center" FontSize="18" Height="34" Width="130"/>
+                        <CheckBox x:Name="collapse" Content="" HorizontalAlignment="Left" Margin="8,18,0,0" VerticalAlignment="Top" Height="15" Width="20" IsChecked="True" Style="{DynamicResource CheckBoxStyle1}" Click="ExpandGrid" IsTabStop="False"/>
+                    </Grid>
+                    <Grid Margin="2,5,-2,4" Grid.Row="1">
+                        <Rectangle Stroke="Black">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFBFDFE" Offset="0"/>
+                                    <GradientStop Color="#FF007ACC" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Label Content="Question Details" HorizontalAlignment="Left" Margin="22,3,0,4" VerticalAlignment="Center" FontSize="18" Height="34" Width="160"/>
+                        <CheckBox x:Name="collapse1" Content="" HorizontalAlignment="Left" Margin="6,13,0,0" VerticalAlignment="Top" Height="15" Width="20" IsChecked="True"  Click="ExpandGrid" IsTabStop="False"/>
+                    </Grid>
+                    <Grid Margin="0,4,0,5" Grid.Row="2">
+                        <Rectangle Stroke="Black">
+                            <Rectangle.Fill>
+                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                    <GradientStop Color="#FFFBFDFE" Offset="0"/>
+                                    <GradientStop Color="#FF007ACC" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Rectangle.Fill>
+                        </Rectangle>
+                        <Label Content="Options Details" HorizontalAlignment="Left" Margin="24,3,0,4" VerticalAlignment="Center" FontSize="18" Height="34" Width="130"/>
+                        <CheckBox  Click="ExpandGrid" x:Name="collapse2" Content="" HorizontalAlignment="Left" Margin="8,12,0,0" VerticalAlignment="Top" Height="15" Width="20" IsChecked="True" IsTabStop="False"/>
+                    </Grid>
+                    <Grid x:Name="MainContent" Margin="0" Grid.Row="3">
+                        <Grid x:Name="option_content" Margin="0" Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=collapse2}" Background="#FFD11B1B" MinWidth="100">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="33"/>
-                                <RowDefinition Height="40"/>
-                                <RowDefinition Height="43"/>
-                                <RowDefinition Height="Auto"/>
+                                <RowDefinition/>
                             </Grid.RowDefinitions>
-                            <Rectangle Margin="0" Stroke="Black" Grid.RowSpan="3">
+                            <Rectangle Stroke="Black" Margin="0">
                                 <Rectangle.Fill>
                                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                         <GradientStop Color="#FFFBFDFE" Offset="0"/>
@@ -190,32 +229,25 @@
                                     </LinearGradientBrush>
                                 </Rectangle.Fill>
                             </Rectangle>
-                            <Label Content="Subject" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top"/>
-                            <Label x:Name="comboTopic" Content="Topic" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-                            <Label Content="Complexity " HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Grid.Row="2"/>
-                            <ComboBox x:Name="comboSubject" Margin="100,2,8,2" Padding="14,8,5,8" Grid.IsSharedSizeScope="True" UseLayoutRounding="True"/>
-                            <ComboBox Margin="100,4,8,4" Padding="14,8,5,8" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Grid.Row="1"/>
-                            <RadioButton x:Name="radMod" Content="Moderate" HorizontalAlignment="Left" Margin="190,13,0,0" Grid.Row="2" VerticalAlignment="Top" GroupName="Complexity"/>
-                            <RadioButton x:Name="radEasy" Content="Easy" HorizontalAlignment="Left" Margin="100,13,0,0" Grid.Row="2" VerticalAlignment="Top" GroupName="Complexity"/>
-                            <RadioButton x:Name="radHard" Content="Hard" HorizontalAlignment="Left" Margin="287,13,0,0" Grid.Row="2" VerticalAlignment="Top" GroupName="Complexity"/>
+                            <Label Content="Option 1" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
+                            <TextBox x:Name="txtOp1" Height="57" Margin="14,27,451,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left" TabIndex="9"/>
+                            <Label Content="Option 2" HorizontalAlignment="Left" Margin="438,3,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
+                            <TextBox x:Name="txtOp2" Height="57" Margin="443,27,13,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left" TabIndex="11"/>
+                            <Label Content="Option 3" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Height="26" Width="112"/>
+                            <TextBox x:Name="txtOp3" Height="57" Margin="14,117,451,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left" TabIndex="13"/>
+                            <Label Content="Option 4" HorizontalAlignment="Left" Margin="443,92,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
+                            <TextBox x:Name="txtOp4" Height="57" Margin="443,117,13,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left" TabIndex="14"/>
+                            <Label Content="Option 5" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Height="26" Width="112"/>
+                            <TextBox x:Name="txtOp5" Height="57" Margin="18,203,447,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left" TabIndex="16"/>
+                            <Label Content="Answer Explination" HorizontalAlignment="Left" Margin="443,178,0,0" VerticalAlignment="Top" Height="26" Width="113"/>
+                            <TextBox x:Name="txtExplination" Height="57" Margin="443,203,13,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left" TabIndex="18"/>
+                            <CheckBox x:Name="chkOp1" Content="Is Correct" HorizontalAlignment="Left" Margin="67,10,0,0" VerticalAlignment="Top" TabIndex="10"/>
+                            <CheckBox x:Name="chkOp5" Content="Is Correct" HorizontalAlignment="Left" Margin="67,184,0,0" VerticalAlignment="Top" TabIndex="17"/>
+                            <CheckBox x:Name="chkOp4" Content="Is Correct" HorizontalAlignment="Left" Margin="500,99,0,0" VerticalAlignment="Top" TabIndex="15"/>
+                            <CheckBox x:Name="chkOp3" Content="Is Correct" HorizontalAlignment="Left" Margin="67,98,0,0" VerticalAlignment="Top" TabIndex="14"/>
+                            <CheckBox x:Name="chkOp2" Content="Is Correct" HorizontalAlignment="Left" Margin="500,9,0,0" VerticalAlignment="Top" TabIndex="12"/>
                         </Grid>
-                    </Grid>
-                    <Grid x:Name="question_details" Margin="0" Grid.Row="1">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" MinHeight="50"/>
-                            <RowDefinition Height="Auto" MinHeight="1"/>
-                        </Grid.RowDefinitions>
-                        <Rectangle Margin="0,6,0,4" Stroke="Black">
-                            <Rectangle.Fill>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FFFBFDFE" Offset="0"/>
-                                    <GradientStop Color="#FF007ACC" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Rectangle.Fill>
-                        </Rectangle>
-                        <Label Content="Question Details" HorizontalAlignment="Left" Margin="24,8,0,8" VerticalAlignment="Center" FontSize="18" Height="34" Width="160"/>
-                        <CheckBox x:Name="collapse1" Content="" HorizontalAlignment="Left" Margin="8,18,0,0" VerticalAlignment="Top" Height="15" Width="20" IsChecked="True"/>
-                        <Grid x:Name="content1" Margin="0,1,0,0" Grid.Row="1" Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=collapse1}" Background="#FFD11B1B" MinWidth="100">
+                        <Grid x:Name="question_content" Margin="0" Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=collapse1}" Background="#FFD11B1B" MinWidth="100" d:IsHidden="True">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="431*"/>
                                 <ColumnDefinition Width="384*"/>
@@ -230,30 +262,18 @@
                             </Rectangle>
                             <Label Content="Question" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Grid.Column="1" Height="26" Width="96"/>
                             <Label Content="Direction" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Height="26" Width="101"/>
-                            <TextBox x:Name="txtDirection" Height="67" Margin="8,35,8,8" TextWrapping="Wrap" VerticalAlignment="Top"/>
-                            <TextBox x:Name="txtQuestion" Height="67" Margin="8,35,8,8" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1"/>
+                            <TextBox x:Name="txtDirection" Height="67" Margin="8,35,8,8" TextWrapping="Wrap" VerticalAlignment="Top" TabIndex="6"/>
+                            <TextBox x:Name="txtQuestion" Height="67" Margin="8,35,8,8" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" TabIndex="8"/>
+                            <CheckBox x:Name="chkDescr" Content="Apply this to next question" HorizontalAlignment="Left" Margin="166,4,0,0" VerticalAlignment="Top" TabIndex="7"/>
                         </Grid>
-                    </Grid>
-                    <Grid x:Name="Options_details" Margin="0" Grid.Row="2">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" MinHeight="50"/>
-                            <RowDefinition Height="Auto" MinHeight="1"/>
-                        </Grid.RowDefinitions>
-                        <Rectangle Margin="0,6,0,4" Stroke="Black">
-                            <Rectangle.Fill>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FFFBFDFE" Offset="0"/>
-                                    <GradientStop Color="#FF007ACC" Offset="1"/>
-                                </LinearGradientBrush>
-                            </Rectangle.Fill>
-                        </Rectangle>
-                        <Label Content="Options Details" HorizontalAlignment="Left" Margin="24,8,0,8" VerticalAlignment="Center" FontSize="18" Height="34" Width="130"/>
-                        <CheckBox x:Name="collapse2" Content="" HorizontalAlignment="Left" Margin="8,18,0,0" VerticalAlignment="Top" Height="15" Width="20" IsChecked="True"/>
-                        <Grid x:Name="content2" Margin="0,1,0,0" Grid.Row="1" Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=collapse2}" Background="#FFD11B1B" MinWidth="100">
+                        <Grid x:Name="general_details_content" Margin="0" Visibility="{Binding IsChecked, Converter={StaticResource BooleanToVisibilityConverter}, ElementName=collapse}" Background="#FFD11B1B" MinWidth="100" d:IsHidden="True">
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="280"/>
+                                <RowDefinition Height="33"/>
+                                <RowDefinition Height="40"/>
+                                <RowDefinition/>
+                                <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
-                            <Rectangle Margin="0" Stroke="Black" Height="280">
+                            <Rectangle Margin="0" Stroke="Black" Grid.RowSpan="4">
                                 <Rectangle.Fill>
                                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                                         <GradientStop Color="#FFFBFDFE" Offset="0"/>
@@ -261,18 +281,19 @@
                                     </LinearGradientBrush>
                                 </Rectangle.Fill>
                             </Rectangle>
-                            <Label Content="Option 1" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Height="26" Width="114"/>
-                            <TextBox x:Name="txtOp1" Height="57" Margin="14,27,451,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left"/>
-                            <Label Content="Option 2" HorizontalAlignment="Left" Margin="438,3,0,0" VerticalAlignment="Top" Height="26" Width="57"/>
-                            <TextBox x:Name="txtOp2" Height="57" Margin="443,27,13,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left"/>
-                            <Label Content="Option 3" HorizontalAlignment="Left" Margin="10,91,0,0" VerticalAlignment="Top" Height="26" Width="112"/>
-                            <TextBox x:Name="txtOp3" Height="57" Margin="14,117,451,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left"/>
-                            <Label Content="Option 4" HorizontalAlignment="Left" Margin="443,92,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
-                            <TextBox x:Name="txtOp4" Height="57" Margin="443,117,13,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left"/>
-                            <Label Content="Option 5" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" Height="26" Width="112"/>
-                            <TextBox x:Name="txtOp5" Height="57" Margin="18,203,447,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left"/>
-                            <Label Content="Answer Explination" HorizontalAlignment="Left" Margin="443,178,0,0" VerticalAlignment="Top" Height="26" Width="113"/>
-                            <TextBox x:Name="txtExplination" Height="57" Margin="443,203,13,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" HorizontalAlignment="Left"/>
+                            <Label Content="Subject" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Height="26" Width="49"/>
+                            <Label Content="Topic" HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Grid.Row="1" Height="26" Width="38"/>
+                            <Label Content="Complexity " HorizontalAlignment="Left" Margin="8,4,0,0" VerticalAlignment="Top" Grid.Row="2" Height="26" Width="73"/>
+                            <ComboBox x:Name="comboSubject"  Margin="100,2,8,2" Padding="14,8,5,8" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" SelectionChanged="comboSubject_SelectedIndexChanged" TabIndex="1">
+                                <ComboBoxItem x:Name="Biology"  Content="Biology" />
+                                <ComboBoxItem x:Name="Chemistry" Content="Chemistry" />
+                                <ComboBoxItem x:Name="Physics" Content="Physics" />
+
+                            </ComboBox>
+                            <ComboBox x:Name="comboTopic" Margin="100,4,8,4" Padding="14,8,5,8" Grid.IsSharedSizeScope="True" UseLayoutRounding="True" Grid.Row="1" TabIndex="2"/>
+                            <RadioButton x:Name="radMod" Content="Moderate" HorizontalAlignment="Left" Margin="190,13,0,0" Grid.Row="2" VerticalAlignment="Top" GroupName="Complexity" TabIndex="4" Height="15" Width="71"/>
+                            <RadioButton x:Name="radEasy" Content="Easy" HorizontalAlignment="Left" Margin="100,13,0,0" Grid.Row="2" VerticalAlignment="Top" GroupName="Complexity" TabIndex="3" Height="15" Width="42"/>
+                            <RadioButton x:Name="radHard" Content="Hard" HorizontalAlignment="Left" Margin="287,13,0,0" Grid.Row="2" VerticalAlignment="Top" GroupName="Complexity" TabIndex="5" Height="15" Width="45"/>
                         </Grid>
                     </Grid>
                 </Grid>

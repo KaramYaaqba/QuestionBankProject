@@ -1,0 +1,14 @@
+C:\EY\Projects\Sandbox\Qrator\Qrator.Common\bin\Debug\Qrator.Common.dll
+C:\EY\Projects\Sandbox\Qrator\Qrator.Common\bin\Debug\Qrator.Common.pdb
+C:\EY\Projects\Sandbox\Qrator\Qrator.Common\obj\Debug\Qrator.Common.dll
+C:\EY\Projects\Sandbox\Qrator\Qrator.Common\obj\Debug\Qrator.Common.pdb
+C:\EY\Projects\Sandbox\Qrator\Qrator.Common\obj\Debug\Qrator.Common.csprojResolveAssemblyReference.cache
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.Common\bin\Debug\Qrator.Common.dll
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.Common\bin\Debug\Qrator.Common.pdb
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.Common\obj\Debug\Qrator.Common.dll
+C:\Users\karam.yaaqna\Desktop\Qrator\Qrator.Common\obj\Debug\Qrator.Common.pdb
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.Common\bin\Debug\Qrator.Common.dll
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.Common\bin\Debug\Qrator.Common.pdb
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.Common\obj\Debug\Qrator.Common.csprojResolveAssemblyReference.cache
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.Common\obj\Debug\Qrator.Common.dll
+C:\Users\karam.yaaqna\Documents\Visual Studio 2013\Projects\QBank\Support Packages\Qrator.Common\obj\Debug\Qrator.Common.pdb

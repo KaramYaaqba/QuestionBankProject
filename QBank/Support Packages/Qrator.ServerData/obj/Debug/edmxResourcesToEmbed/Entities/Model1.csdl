@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Qrator.ServerData.Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QBankEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Countries" EntityType="Qrator.ServerData.Model.Country" />
+    <EntitySet Name="Examinations" EntityType="Qrator.ServerData.Model.Examination" />
+    <EntitySet Name="PracticeTests" EntityType="Qrator.ServerData.Model.PracticeTest" />
+    <EntitySet Name="Questions" EntityType="Qrator.ServerData.Model.Question" />
+    <EntitySet Name="Subjects" EntityType="Qrator.ServerData.Model.Subject" />
+    <EntitySet Name="Topics" EntityType="Qrator.ServerData.Model.Topic" />
+    <AssociationSet Name="FK_Examinations_Countries" Association="Qrator.ServerData.Model.FK_Examinations_Countries">
+      <End Role="Country" EntitySet="Countries" />
+      <End Role="Examination" EntitySet="Examinations" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subjects_Examinations" Association="Qrator.ServerData.Model.FK_Subjects_Examinations">
+      <End Role="Examination" EntitySet="Examinations" />
+      <End Role="Subject" EntitySet="Subjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Questions_PracticeTests" Association="Qrator.ServerData.Model.FK_Questions_PracticeTests">
+      <End Role="PracticeTest" EntitySet="PracticeTests" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Questions_Topics" Association="Qrator.ServerData.Model.FK_Questions_Topics">
+      <End Role="Topic" EntitySet="Topics" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Topics_Subjects" Association="Qrator.ServerData.Model.FK_Topics_Subjects">
+      <End Role="Subject" EntitySet="Subjects" />
+      <End Role="Topic" EntitySet="Topics" />
+    </AssociationSet>
+    <EntitySet Name="Answers" EntityType="Qrator.ServerData.Model.Answer" />
+    <AssociationSet Name="FK_Answers_Questions" Association="Qrator.ServerData.Model.FK_Answers_Questions">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Answer" EntitySet="Answers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Examinations" Relationship="Qrator.ServerData.Model.FK_Examinations_Countries" FromRole="Country" ToRole="Examination" />
+  </EntityType>
+  <EntityType Name="Examination">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CountryID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Country" Relationship="Qrator.ServerData.Model.FK_Examinations_Countries" FromRole="Examination" ToRole="Country" />
+    <NavigationProperty Name="Subjects" Relationship="Qrator.ServerData.Model.FK_Subjects_Examinations" FromRole="Examination" ToRole="Subject" />
+  </EntityType>
+  <EntityType Name="PracticeTest">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="Source" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="ExaminationID" Type="Int32" Nullable="false" />
+    <Property Name="AddedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AddedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+    <Property Name="MasterCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Questions" Relationship="Qrator.ServerData.Model.FK_Questions_PracticeTests" FromRole="PracticeTest" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TopicID" Type="Int32" Nullable="false" />
+    <Property Name="HeaderText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="QuestionText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Explanation" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Complexity" Type="Int16" Nullable="false" />
+    <Property Name="PracticeTestID" Type="Int32" Nullable="false" />
+    <Property Name="MasterCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="PracticeTest" Relationship="Qrator.ServerData.Model.FK_Questions_PracticeTests" FromRole="Question" ToRole="PracticeTest" />
+    <NavigationProperty Name="Topic" Relationship="Qrator.ServerData.Model.FK_Questions_Topics" FromRole="Question" ToRole="Topic" />
+    <NavigationProperty Name="Answers" Relationship="Qrator.ServerData.Model.FK_Answers_Questions" FromRole="Question" ToRole="Answer" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ExaminationID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Examination" Relationship="Qrator.ServerData.Model.FK_Subjects_Examinations" FromRole="Subject" ToRole="Examination" />
+    <NavigationProperty Name="Topics" Relationship="Qrator.ServerData.Model.FK_Topics_Subjects" FromRole="Subject" ToRole="Topic" />
+  </EntityType>
+  <EntityType Name="Topic">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="SubjectID" Type="Int32" Nullable="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Questions" Relationship="Qrator.ServerData.Model.FK_Questions_Topics" FromRole="Topic" ToRole="Question" />
+    <NavigationProperty Name="Subject" Relationship="Qrator.ServerData.Model.FK_Topics_Subjects" FromRole="Topic" ToRole="Subject" />
+  </EntityType>
+  <Association Name="FK_Examinations_Countries">
+    <End Type="Qrator.ServerData.Model.Country" Role="Country" Multiplicity="1" />
+    <End Type="Qrator.ServerData.Model.Examination" Role="Examination" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Examination">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subjects_Examinations">
+    <End Type="Qrator.ServerData.Model.Examination" Role="Examination" Multiplicity="1" />
+    <End Type="Qrator.ServerData.Model.Subject" Role="Subject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Examination">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Subject">
+        <PropertyRef Name="ExaminationID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Questions_PracticeTests">
+    <End Type="Qrator.ServerData.Model.PracticeTest" Role="PracticeTest" Multiplicity="1" />
+    <End Type="Qrator.ServerData.Model.Question" Role="Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PracticeTest">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="PracticeTestID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Questions_Topics">
+    <End Type="Qrator.ServerData.Model.Topic" Role="Topic" Multiplicity="1" />
+    <End Type="Qrator.ServerData.Model.Question" Role="Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Topic">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="TopicID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Topics_Subjects">
+    <End Type="Qrator.ServerData.Model.Subject" Role="Subject" Multiplicity="1" />
+    <End Type="Qrator.ServerData.Model.Topic" Role="Topic" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subject">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Topic">
+        <PropertyRef Name="SubjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OptionText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsCorrect" Type="Boolean" Nullable="false" />
+    <Property Name="QuestionID" Type="Int32" Nullable="false" />
+    <Property Name="MasterCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Status" Type="Int16" Nullable="false" />
+    <NavigationProperty Name="Question" Relationship="Qrator.ServerData.Model.FK_Answers_Questions" FromRole="Answer" ToRole="Question" />
+  </EntityType>
+  <Association Name="FK_Answers_Questions">
+    <End Type="Qrator.ServerData.Model.Question" Role="Question" Multiplicity="1" />
+    <End Type="Qrator.ServerData.Model.Answer" Role="Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="QuestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

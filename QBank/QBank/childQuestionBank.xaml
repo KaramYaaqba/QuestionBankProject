@@ -22,9 +22,7 @@
         <TextBox x:Name="txtDescr" Grid.Column="1" Margin="8,8,10,8" Grid.Row="3" TextWrapping="Wrap"/>
         <TextBox x:Name="txtTime" Grid.Column="1" Margin="8" Grid.Row="4" TextWrapping="Wrap"/>
         <ComboBox x:Name="comboGrade" Grid.Column="1" Margin="8" Grid.Row="2">
-            <ComboBoxItem Name="value1"  Content="Value1"/>
-            <ComboBoxItem Name="value2"  Content="Value2"/>
-            <ComboBoxItem Name="value3"  Content="Value3"/>
+
         </ComboBox>
         <Button x:Name="savebtn" Content="Save" Grid.Column="1" HorizontalAlignment="Left" Margin="21,10,0,0" VerticalAlignment="Top" Width="75" Click="savebtn_Click"/>
         <Button Content="Cancel" Grid.Column="1" HorizontalAlignment="Left" Margin="146,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.692,0.391" Click="Button_Click"/>

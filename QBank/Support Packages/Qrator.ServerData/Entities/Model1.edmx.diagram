@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9849eee023e14a2bbb1c8d2acf80d085" Name="Diagram1">
+        <EntityTypeShape EntityType="Qrator.ServerData.Model.Country" Width="1.5" PointX="0.75" PointY="1.875" />
+        <EntityTypeShape EntityType="Qrator.ServerData.Model.Examination" Width="1.5" PointX="3" PointY="1.625" />
+        <EntityTypeShape EntityType="Qrator.ServerData.Model.PracticeTest" Width="1.5" PointX="7.5" PointY="5.25" />
+        <EntityTypeShape EntityType="Qrator.ServerData.Model.Question" Width="1.5" PointX="9.75" PointY="1" />
+        <EntityTypeShape EntityType="Qrator.ServerData.Model.Subject" Width="1.5" PointX="5.25" PointY="1.625" />
+        <EntityTypeShape EntityType="Qrator.ServerData.Model.Topic" Width="1.5" PointX="7.5" PointY="1.625" />
+        <AssociationConnector Association="Qrator.ServerData.Model.FK_Examinations_Countries" />
+        <AssociationConnector Association="Qrator.ServerData.Model.FK_Subjects_Examinations" />
+        <AssociationConnector Association="Qrator.ServerData.Model.FK_Questions_PracticeTests" />
+        <AssociationConnector Association="Qrator.ServerData.Model.FK_Questions_Topics" />
+        <AssociationConnector Association="Qrator.ServerData.Model.FK_Topics_Subjects" />
+        <EntityTypeShape EntityType="Qrator.ServerData.Model.Answer" Width="1.5" PointX="12" PointY="1.5" />
+        <AssociationConnector Association="Qrator.ServerData.Model.FK_Answers_Questions" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
